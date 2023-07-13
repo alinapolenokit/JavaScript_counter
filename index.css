@@ -1,0 +1,81 @@
+.counter {
+    margin: 0 auto;
+    padding: 100px;
+    font-family: "Manrope", sans-serif;
+}
+
+.box{
+    padding: 36px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    border-radius: 20px;
+    background-color: rgb(232, 232, 232);
+    width: 100%;
+}
+.counterText{
+    color: #000000;
+}
+.counterText, .plusButton, .minButton, .resetButton{
+    font-weight:  700;
+    font-size: 32px;
+    line-height: 44px;
+}
+.plusButton, .minButton, .resetButton{
+    width: 500px;
+    height: 100px;
+    border-radius: 20px;
+    color: #ffffff;
+}
+.plusButton, .minButton{
+    background-color: #4191FF;
+}
+.plusButton:hover,
+.minButton:hover{
+    color: #4191FF;
+    cursor: pointer;
+    background-color: #fff; 
+}
+.plusButton:active,
+.minButton:active{
+    box-shadow: 0 0 10px 10px #4191FF;
+}
+.resetButton{
+    background-color: #D45366;
+}
+.resetButton:hover{
+    color: #D45366;
+    cursor: pointer;
+    background-color: #fff; 
+}
+.resetButton:active{
+    box-shadow: 0 0 10px 10px #D45366;
+}
+@media (max-width: 1199px) and (min-width: 961px){
+}
+@media (max-width: 960px) and (min-width: 769px){
+    .box{
+        padding: 36px 0;
+        width: 100%;
+    }
+}
+@media (max-width: 768px) and (min-width: 576px){
+    .counter{
+        width: 100%;
+        padding: 100px 20px;
+    }
+    .plusButton, .minButton, .resetButton{
+        width: 85%;
+    }
+}
+@media (max-width: 575px){
+    .counter{
+        width: 100%;
+        padding: 100px 20px;
+    }
+    .plusButton, .minButton, .resetButton{
+        width: 85%;
+    }
+}
